@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class=" btn">
+           <img class="arrow" src="imagens/menu (1).png" alt="">
+           <div class="txt" style="padding-left: 59px;">Menu</div> 
+        </div>
+        
+        <div class="menu">
+           
+            <img class="icon" style="width: 10px;" src="imagens/one.png" alt="primeiro">
+            
+                <div class="txt">1958</div>
+       
+        </div>
+            
+        <div class="menu">
+            <img class="icon" src="imagens/two.png" alt="segundo">
+            
+            <div class="txt">1962</div> 
+        
+        </div>
+
+        <div class="menu">
+            <img class="icon" src="imagens/three.png" alt="terceiro">
+            
+            <div class="txt">1970</div>
+        
+        </div>    
+
+        <div class="menu">
+            <img class="icon" src="imagens/four.png" alt="quarto">
+            
+            <div class="txt">1994</div>
+        
+        </div>  
+
+        <div class="menu">
+            <img class="icon" src="imagens/five.png" alt="quinto">
+            
+            <div class="txt">2002</div>
+        
+        </div>  
+        
+    </div>
+
+</body>
+
+</html>
+<script>
+    var arrow = document.querySelector(".arrow");
+    var container = document.querySelector('.container');
+
+    arrow.onclick = e =>{
+        if(!container.classList.contains('oculto')){
+            container.classList.add('oculto');
+        }else{
+            container.classList.remove('oculto')
+        }
+    }
+</script>
